@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+.container {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+aside {
+    flex: 30%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+aside h3 i {
+    position: left;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: 2px solid rgb(228, 226, 221);
+    box-sizing: border-box;
+}
+
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+.flex-row .form-group {
+    width: 100%;
+
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+button {
+
+    width: 100%;
+    padding: 8px;
+    border: none;
+    margin-top: 15px;
+    background: #0d1bea;
+    border-radius: 5px;
+    font-size: 17px;
+    color: aliceblue;
+
+
+}
+
+button:hover {
+    background: #1653b4;
+
+}
+
+.cart-item {
+    display: flex;
+    gap: 10px;
+}
+
+.cart-item a {
+    font-size: 18px;
+}
+
+.cart-item img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+footer {
+    background: #000;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Space between links */
+    margin-bottom: 1rem;
+}
+
+.footer-links a {
+    color: #ffffff;
+    /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    /* Optional: underline on hover */
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-top: 20px;
+    }
+    .flex-row{
+        flex-direction: column;
+    }
+    
+}

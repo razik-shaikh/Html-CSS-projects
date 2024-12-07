@@ -1,0 +1,221 @@
+.heading {
+    background-image: url('https://images.pexels.com/photos/15405169/pexels-photo-15405169/free-photo-of-hot-air-balloons-over-cappadocia-turkey.jpeg?auto=compress&cs=tinysrgb&w=400');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    /* padding: 3rem; */
+
+
+}
+
+.heading p {
+    font-size: 1.5rem;
+}
+
+.value-heading,
+.meet-heading,
+.Featured-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    /* Adjust heading size if needed */
+    text-align: center;
+    /* Centers the heading */
+    margin-bottom: 1rem;
+}
+
+.value-heading::after,
+.meet-heading::after,
+.Featured-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(222, 143, 17);
+    margin: 0.5rem auto;
+    /* Centers the line and adds space */
+
+}
+
+.about-text-container {
+    background: #eaf6f8;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.about-text-container .image-container {
+    width: 50%;
+    padding: 1rem;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.image-container img {
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+margin: 0 auto;
+    border-radius: 50%;
+
+}
+
+.text {
+    width: 50%;
+    padding: 2rem;
+    align-items: center;
+}
+
+.text p {
+    padding-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: rgb(76, 75, 74);
+}
+
+.cards {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.card-contain {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    width: 400px;
+
+    /* height: auto; */
+    box-sizing: border-box;
+    background-color: #ece9e9;
+    padding: 20px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5); */
+    transition: 0.3s ease;
+
+}
+
+.card-contain img {
+    width: 100%;
+    height: 60%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card-contain h2 {
+    padding-top: 1rem;
+    color: rgb(230, 112, 8);
+}
+
+.card-contain h4 {
+    color: #575559;
+    /* font-size: 20px; */
+    padding-top: 1rem;
+}
+
+.card-contain p {
+    padding-top: 1rem;
+    color: #444242;
+}
+
+.card-text {
+    margin: 0;
+
+    padding-top: 1rem;
+    text-align: center;
+    /* gap: 0; */
+}
+
+.para {
+
+    max-width: 800px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: left;
+    padding: 2rem;
+
+}
+
+.para p {
+    font-size: 18px;
+
+    color: #575559;
+    line-height: 1.9;
+}
+
+.para strong {
+    color: rgb(230, 112, 8);
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .about-section{
+        padding-top: 150px;
+    }
+    .heading h1 {
+        font-size: 2rem;
+    }
+    .heading p {
+        font-size: 1.2rem;
+    }
+    .Featured-heading {
+        font-size: 1.5rem;
+    }
+
+    /* Grid adjustments for cards */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    /* Card content text adjustments */
+    .card-data h2 {
+        font-size: 1.4rem;
+    }
+
+    .card-data p {
+        font-size: 0.9rem;
+    }
+    .read-more {
+        padding: 0.8rem 1.5rem;
+        font-size: 14px;
+    }
+    .about-text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-container{
+        align-items: center;
+        justify-content: center;
+    }
+    /* .image-container img {
+        width:  100%;
+        height: auto;
+    } */
+    .text{
+        width: 100%;
+    }
+}

@@ -1,0 +1,168 @@
+.heading {
+    background-image: url('https://img.freepik.com/free-photo/travel-concept-with-landmarks_23-2149153256.jpg?ga=GA1.1.395048361.1731402115&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    /* padding: 3rem; */
+
+
+}
+
+.heading p {
+    font-size: 1.5rem;
+}
+
+.Featured-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin-top: 2rem;
+    font-size: 2rem;
+    /* Adjust heading size if needed */
+    text-align: center;
+    /* Centers the heading */
+    margin-bottom: 1rem;
+}
+
+.Featured-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(222, 143, 17);
+    margin: 0.5rem auto;
+    /* Centers the line and adds space */
+
+}
+
+.cards {
+    padding: 2rem;
+    display: grid;
+    /* Enables Grid layout */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 equal columns */
+    gap: 30px;
+    margin-bottom: 2rem;
+}
+
+.card-contain {
+    background: #fff;
+    padding: 1rem;
+
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: 0.2s ease-in-out;
+
+}
+
+.card-contain:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+
+.card-contain img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* margin: 0 auto; */
+    border-radius: 5px;
+    /* display: block; */
+}
+
+.card-data {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    padding: 1.5rem;
+    text-align: center;
+
+}
+
+.card-data h2 {
+
+    font-size: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.card-data p {
+    color: #4a4a4b;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.read-more {
+    padding: 1rem 2.1rem;
+    border-radius: 29px;
+    border: none;
+    background: #e8c413;
+    font-size: 15px;
+    color: #14196c;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.read-more:hover {
+    background-color: #c7b61b;
+
+}
+
+@media screen and (max-width: 768px) {
+    .destination-section {
+        padding-top: 150px;
+    }
+
+    body {
+        padding-top: 200px;
+        /* Increase space for smaller screens */
+    }
+
+
+
+    /* Heading section font size adjustments */
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .heading p {
+        font-size: 1.2rem;
+    }
+
+    /* Featured-heading font size */
+    .Featured-heading {
+        font-size: 1.5rem;
+    }
+
+    /* Grid adjustments for cards */
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 1rem;
+    }
+
+    /* Card content text adjustments */
+    .card-data h2 {
+        font-size: 1.4rem;
+    }
+
+    .card-data p {
+        font-size: 0.9rem;
+    }
+
+    .meet-heading{
+        padding: 0.8rem 1.5rem;
+        font-size: 14px;
+    }
+}

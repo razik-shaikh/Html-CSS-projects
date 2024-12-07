@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Form</title>
+    <!-- DC Payment Icons CSS -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.dcodes.net/2/payment_icons/dc_payment_icons.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Checkout Form</h1>
+    </header>
+    <main>
+        <div class="container">
+            <form action="">
+                <h3>Billing Address</h3>
+                <hr>
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="address"><i class="fas fa-map-marker-alt"></i> Address</label>
+                    <input type="text" id="address" name="address" placeholder="123 Main St" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" placeholder="City" required>
+                </div>
+                <div class="flex-row">
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="State" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zip">Zip Code</label>
+                        <input type="number" id="zip" name="zip" placeholder="12345" required>
+                    </div>
+                </div>
+                <h3>Payment</h3>
+                <hr>
+                <label for="">Accepted Cards</label>
+                <div class="accepted-card">
+                    <span class="dc_payment_icons_flat_32 dc_visa_flat" title="Visa Electron"></span>
+                    <span class="dc_payment_icons_flat_32 dc_mastercard_flat" title="MasterCard"></span>
+                    <span class="dc_payment_icons_flat_32 dc_american_express_flat" title="American Express"></span>
+                    <span class="dc_payment_icons_flat_32 dc_paypal_flat" title="PayPal"></span>
+                    <span class="dc_payment_icons_flat_32 dc_cirrus_flat" title="Cirrus"></span>
+                    <span class="dc_payment_icons_flat_32 dc_delta_flat" title="Delta"></span>
+                    <span class="dc_payment_icons_flat_32 dc_direct_debit_flat" title="Direct Debit"></span>
+                </div>
+                <div class="form-group">
+                    <label for="cardName">Name on Card</label>
+                    <input type="text" id="cardName" name="cardName" placeholder="Name on Card" required>
+                </div>
+                <div class="form-group">
+                    <label for="emonth">Expiry Month</label>
+                    <input type="text" id="emonth" name="emonth" placeholder="MM" required>
+                </div>
+                <div class="flex-row">
+
+                    <div class="form-group">
+                        <label for="exp-year">Exp Year</label>
+                        <input type="number" id="exp-year" name="exp-year" placeholder="Exp Year">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="number" id="cvv" name="cvv" placeholder="CVV">
+                    </div>
+
+                </div>
+                <label for="">Shipping address same as billing
+                    <input type="checkbox">
+                </label>
+                <button>continue to checkout</button>
+            </form>
+        </div>
+        <aside>
+            <h3>Card summary <i class="fas fa-shopping-cart"></i></h3>
+            <hr>
+            <div class="cart-item">
+                <img src="https://images.pexels.com/photos/2343661/pexels-photo-2343661.jpeg?auto=compress&cs=tinysrgb&w=400"
+                    alt="product">
+                <a href="">G star Slim fit jeans denim</a>
+                <h4>$560</h4>
+            </div>
+            <div class="cart-item">
+                <img src="https://plus.unsplash.com/premium_photo-1679913792906-13ccc5c84d44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="product">
+                <a href="">JBL Headphones</a>
+                <h4>$1500</h4>
+            </div>
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D"
+                    alt="product">
+                <a href="">G star Slim fit jeans denim</a>
+                <h4>$500</h4>
+            </div>
+            <div class="cart-item">
+                <img src="https://images.unsplash.com/photo-1615396899839-c99c121888b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2R1Y3R8ZW58MHx8MHx8fDA%3D"
+                    alt="product">
+                <a href="">Face wash for dry skin</a>
+                <h4>$160</h4>
+            </div>
+            <hr>
+            <h3>Total: $2670</h3>
+        </aside>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#privacy-policy">Privacy Policy</a>
+            <a href="#terms">Terms and Conditions</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <p>&copy; 2024 Checkout Form By Razik Shaikh. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

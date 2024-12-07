@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="toggle" class="toggle-checkbox">
+        <div class="form" id="login-form">
+            <h2>Login</h2>
+            <!-- Input 1: Name -->
+            <div class="form-group">
+                <input type="text" id="inputName" placeholder=" " required>
+                <label for="inputName" class="floating-label">Username</label>
+            </div>
+            <!-- Input 2: passport -->
+            <div class="form-group">
+                <input type="text" id="inputPassword" placeholder=" " required>
+                <label for="inputPassword" class="floating-label">Password</label>
+            </div>
+            <p class="forgetpas"><a href="#forget password">Forget password?</a></p>
+            <button type="submit">Login</button>
+            <p><a href="#signup" onclick="document.getElementById('toggle').checked=true;">Not a member?Sign Up</a></p>
+        </div>
+        <div class="form hidden" id="signup-form">
+            <h2>Sign Up</h2>
+            <!-- Input 1: Name -->
+            <div class="form-group">
+                <input type="text" id="userName" placeholder=" " required>
+                <label for="userName" class="floating-label">Username</label>
+            </div>
+            <!-- Input 2: email -->
+            <div class="form-group">
+                <input type="email" id="inputEmail" placeholder=" " required>
+                <label for="inputEmail" class="floating-label">Email</label>
+            </div>
+            <!-- Input 3: passport -->
+            <div class="form-group">
+                <input type="password" id="inputPassword" placeholder=" " required>
+                <label for="inputPassword" class="floating-label">Password</label>
+            </div>
+            <!-- Input 4:confirm passport -->
+            <div class="form-group">
+                <input type="password" id="confirmpas" placeholder=" " required>
+                <label for="confirmpas" class="floating-label">Confirm Password</label>
+            </div>
+            <button type="submit">Sign Up</button>
+            <p><a href="#login" onclick="document.getElementById('toggle').checked=false;">Already have an
+                    account?Login</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

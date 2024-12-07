@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            display: inline-block;
+            font-weight: normal;
+            color: #555;
+        }
+
+        .submit-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+
+        .form-footer {
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                padding: 15px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Survey Feedback Form</h2>
+        <form action="submit_form.php" method="post">
+
+            <!-- User Information -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+            </div>
+
+            <!-- Dropdown Selection -->
+            <div class="form-group">
+                <label for="age">Age Range</label>
+                <select id="age" name="age">
+                    <option value="" disabled selected>Select your age range</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-45">36-45</option>
+                    <option value="46+">46+</option>
+                </select>
+            </div>
+
+            <!-- Radio Buttons (Single Choice) -->
+            <div class="form-group">
+                <label>How satisfied are you with our service?</label>
+                <div class="radio-group">
+                    <label>
+                        <input type="radio" name="satisfaction" value="very_satisfied" required> Very Satisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="satisfied"> Satisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="neutral"> Neutral
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="unsatisfied"> Unsatisfied
+                    </label>
+                    <label>
+                        <input type="radio" name="satisfaction" value="very_unsatisfied"> Very Unsatisfied
+                    </label>
+                </div>
+            </div>
+
+            <!-- Checkboxes (Multiple Choices) -->
+            <div class="form-group">
+                <label>What features do you find most useful?</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="features[]" value="fast_response"> Fast Response
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features[]" value="friendly_support"> Friendly Support
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features[]" value="ease_of_use"> Ease of Use
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features[]" value="value_for_money"> Value for Money
+                    </label>
+                </div>
+            </div>
+
+            <!-- Comments -->
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Provide any additional feedback"
+                    rows="5"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+
+        </form>
+
+        <div class="form-footer">
+            <p>Thank you for your feedback!</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

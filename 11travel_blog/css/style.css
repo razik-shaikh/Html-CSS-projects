@@ -1,0 +1,144 @@
+/* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #e5f9f9;
+    padding-top: 100px;
+}
+
+header {
+
+    /* background: linear-gradient(to right, #3498db, #2ecc71); */
+    background-color: #4259ad;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    /* Make header fixed */
+    top: 0;
+    /* Stick to the top */
+    left: 0;
+    /* Stick to the left */
+    width: 100%;
+    /* Ensure the header spans the full width */
+    z-index: 1000;
+    padding: 1rem 2rem;
+    padding: 1.5rem;
+
+
+}
+
+.logo {
+    text-align: left;
+    flex: 0 0 auto;
+
+}
+
+.logo img {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+nav {
+    position: absolute;
+    /* Center navigation in the header */
+    left: 50%;
+    /* Start from the center */
+    transform: translateX(-50%);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-links {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    /* background: white; */
+    color: #f5f107;
+}
+
+/* footer  */
+footer {
+    color: #ffff;
+    background: #4259ad;
+    text-align: center;
+    padding: 2rem;
+}
+
+footer i {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+footer i:hover{
+    color: #f5f107;
+}
+
+/* Mobile-first (max-width: 768px) */
+@media screen and (max-width: 768px) {
+
+    /* Adjust header */
+    nav {
+        flex-direction: column;
+        position: static;
+        transform: none;
+        text-align: left;
+        margin-top: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    /* Card adjustments */
+    .card-contain,
+    .latest-card-contain {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .home-section {
+        padding: 1rem;
+    }
+
+    .Featured-heading,
+    .latest-post-heading {
+        font-size: 1.5rem;
+    }
+
+    /* Footer icons */
+    footer i {
+        font-size: 1.2rem;
+    }
+}

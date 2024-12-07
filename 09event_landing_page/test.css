@@ -1,0 +1,96 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    padding: 2em;
+    background: #0044cc;
+    color: #fff;
+  }
+  
+  /* Layout with CSS Grid */
+  .event-details {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    background: #f0f0f0;
+  }
+  
+  .detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+  
+  /* Schedule Section */
+  .schedule {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1em;
+    padding: 2em;
+  }
+  
+  /* Speaker Section */
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 2em;
+  }
+  
+  .speaker {
+    text-align: center;
+    padding: 1em;
+    transition: transform 0.3s;
+  }
+  
+  .speaker:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Registration Form */
+  .registration {
+    padding: 2em;
+    background: #0044cc;
+    color: #fff;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  
+  input, textarea, button {
+    padding: 0.5em;
+    font-size: 1em;
+    border: none;
+  }
+  
+  button {
+    background: #ffa500;
+    color: #fff;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #cc8400;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .event-details, .schedule {
+      flex-direction: column;
+      gap: 1em;
+    }
+  }
+  

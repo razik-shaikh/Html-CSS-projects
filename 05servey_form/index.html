@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Servey Form
+        </h1>
+    </header>
+
+    <div class="container">
+
+        <form action="" class="form-section">
+            <p>We value your feedback let us know how we can improve our services</p>
+            <div class="input-group">
+                <label for="">*Name</label>
+                <input type="text" placeholder="Name">
+            </div>
+            <div class="input-group">
+                <label for="">*Email</label>
+                <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="input-group">
+                <label for="">*Age</label>
+                <input type="number" placeholder="Age">
+            </div>
+            <div class="input-group">
+                <label for="">*First time playing scope room?</label>
+                <select name="" id="">
+                    <option value="">Select</option>
+                    <option value="">Fist Timer</option>
+                    <option value="">Play Before</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>*Which game did you play?</label>
+                <div class="checkbox-group">
+                    <label>
+                        <input type="checkbox" name="features[]" value="fast_response"> PubG
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features[]" value="friendly_support"> GTA
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features[]" value="ease_of_use"> Call of Duty
+                    </label>
+                    <label>
+                        <input type="checkbox" name="features[]" value="value_for_money"> God of War
+                    </label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="">
+                    *Will you recommend the to your friend
+                </label>
+                <div class="radio-group">
+                    <label for="">
+                        <input type="radio">Yes
+                    </label>
+                    <label for="">
+                        <input type="radio">No
+                    </label>
+                    <label for="">
+                        <input type="radio">Maybe
+                    </label>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="">Any comment or suggetions?</label>
+                <textarea name="" id="textarea">please write here</textarea>
+            </div>
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Submit Feedback</button>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>
+            Thank you for your feedback!
+        </p>
+    </footer>
+</body>
+
+</html>

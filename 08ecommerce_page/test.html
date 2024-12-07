@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body>
+
+<!-- Header with Shopping Cart Icon -->
+<header class="header">
+    <h1>ShopLogo</h1>
+    <div class="cart-icon">
+        <span class="cart-count">0</span> 🛒
+    </div>
+</header>
+
+<!-- Main Product Page Layout -->
+<main class="product-page">
+    
+    <!-- Product Image Gallery -->
+    <div class="product-gallery">
+        <img id="main-image" src="image1.jpg" alt="Product Image" class="main-image">
+        <div class="thumbnail-gallery">
+            <img src="image1.jpg" alt="Thumbnail" onclick="changeImage('image1.jpg')">
+            <img src="image2.jpg" alt="Thumbnail" onclick="changeImage('image2.jpg')">
+            <img src="image3.jpg" alt="Thumbnail" onclick="changeImage('image3.jpg')">
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <div class="product-details">
+        <h2>Product Name</h2>
+        
+        <p class="price">$99.99</p>
+        <p>Select Options:</p>
+        
+        <label for="color">Color:</label>
+        <select id="color">
+            <option>Red</option>
+            <option>Blue</option>
+            <option>Green</option>
+        </select>
+        
+        <label for="ram">RAM:</label>
+        <select id="ram">
+            <option>8GB</option>
+            <option>16GB</option>
+            <option>32GB</option>
+        </select>
+
+        <button onclick="addToCart()">Add to Cart</button>
+        <h3>Product Specifications</h3>
+        <ul>
+            <li>Display: 6.5 inches</li>
+            <li>Battery Life: 12 hours</li>
+            <li>Camera: 12 MP</li>
+            <!-- Add more specifications as needed -->
+        </ul>
+    </div>
+
+    <!-- Product Reviews -->
+    <div class="product-reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review">
+            <p>⭐️⭐️⭐️⭐️⭐️</p>
+            <p>"Great product! Really happy with it."</p>
+            <p>- John Doe</p>
+        </div>
+        <div class="review">
+            <p>⭐️⭐️⭐️⭐️</p>
+            <p>"Good quality but a bit expensive."</p>
+            <p>- Jane Smith</p>
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="related-products">
+        <h3>Related Products</h3>
+        <div class="related-product">
+            <img src="related1.jpg" alt="Related Product 1">
+            <p>Related Product 1 - $49.99</p>
+        </div>
+        <div class="related-product">
+            <img src="related2.jpg" alt="Related Product 2">
+            <p>Related Product 2 - $59.99</p>
+        </div>
+    </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

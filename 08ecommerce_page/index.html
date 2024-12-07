@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Product Page</h1>
+        <div class="cart-icon">
+            <span class="cart-count">0</span> 🛒
+        </div>
+    </header>
+    <main class="">
+        <div class="product-page">
+            <!-- product-gallery -->
+            <div class="product-gallery">
+                <img id="main-image" src="https://m.media-amazon.com/images/I/71w-mmKgIfL._SX679_.jpg"
+                    alt="Product Image" class="main-image">
+
+                <div class="thumbnail-gallery">
+                    <img src="https://m.media-amazon.com/images/I/71Pj7m69-iL._SX679_.jpg" alt="Thumbnail"
+                        onclick="changeImage('image1.jpg')">
+                    <img src="https://m.media-amazon.com/images/I/710k6OQvfbL._SX679_.jpg" alt="Thumbnail"
+                        onclick="changeImage('image2.jpg')">
+                    <img src="https://m.media-amazon.com/images/I/61i9pc7NLWL._SX679_.jpg" alt="Thumbnail"
+                        onclick="changeImage('image3.jpg')">
+                </div>
+            </div>
+            <!-- Product Details -->
+            <div class="product-details">
+                <h2>Realme P1 5G(Peacock Green, 128GB)(8GB)</h2>
+                <p class="mobile-info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam repellat officia veritatis. Non
+                    fugit unde aperiam, voluptatem quas blanditiis rem veritatis cupiditate adipisci. Fugiat explicabo
+                    pariatur consequuntur vero corrupti impedit exercitationem error quod officia voluptatibus incidunt
+                    velit officiis quaerat commodi soluta, voluptatum perferendis accusamus aut eos animi maiores, in
+                    distinctio veniam. Maxime libero quam necessitatibus dignissimos sit a ab dolorem vero aut sed?
+                    Excepturi quos nostrum sequi vitae itaque!
+                </p>
+                <p class="price">
+                    ₹16,999.00 <span class="original-price">₹20,999.00</span>
+                </p>
+
+
+                <div class="select-container">
+                    <label for="color">Color:</label>
+                    <select id="color">
+                        <option>Red</option>
+                        <option>Blue</option>
+                        <option>Green</option>
+                    </select>
+
+                    <label for="ram">RAM:</label>
+                    <select id="ram">
+                        <option>8GB</option>
+                        <option>16GB</option>
+                        <option>32GB</option>
+                    </select>
+                    <label for="">Storage:</label>
+                    <select id="ram">
+                        <option>128GB</option>
+                        <option>256GB</option>
+                        <option>512GB</option>
+                    </select>
+                </div>
+
+                <div class="available-offers">
+                    <h3>Available Offers</h3>
+                    <ul>
+                        <li><span class="tick-icon">✔️</span>10% off on HDFC Bank Credit Cards</li>
+                        <li><span class="tick-icon">✔️</span>5% Unlimited Cashback on Flipkart Axis Bank Credit Card
+                        </li>
+                        <li><span class="tick-icon">✔️</span>No Cost EMI on Bajaj Finserv EMI Card on cart value above
+                            ₹2999</li>
+                        <li><span class="tick-icon">✔️</span>Extra ₹2000 off (price inclusive of discount)</li>
+                    </ul>
+                </div>
+
+                <button class="add-to-cart-btn">Add to Cart</button>
+            </div>
+        </div>
+        <!-- Product Reviews -->
+        <div class="product-reviews">
+            <h3>Customer Reviews</h3>
+
+            <div class="review">
+                <p class="reviewer-name">- John Doe</p>
+                <p>Rating ⭐️⭐️⭐️⭐️⭐️</p>
+                <p>"Great product! Really happy with it."</p>
+            </div>
+            <hr>
+            <div class="review">
+                <p class="reviewer-name">- Jane Smith</p>
+                <p>Rating ⭐️⭐️⭐️⭐️</p>
+                <p>"Good quality but a bit expensive."</p>
+            </div>
+            <hr>
+        </div>
+        <div class="description">
+            <h3>Description</h3>
+            <h4>General</h4>
+            <p><strong>In the Box:</strong> One USB Cable, One Charger, one user-manual , one Sim ejector pin </p>
+            <p><strong>Model Number:</strong> RMX3870</p>
+            <p><strong> Model Name:</strong> P1 5G</p>
+            <p><strong>Browse Type:</strong>SmartPhone</p>
+            <p><strong>Color:</strong> Peacock Green</p>
+            <p><strong>Sim Type:</strong> Dual Sim</p>
+        </div>
+        <div class="related-product">
+            <h3>Related Products</h3>
+            <div class="related-products-container">
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/61g1pqSjAhL._AC_UL320_.jpg">
+                    <span class="">OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)</span>
+                    <div class="rating">
+                        <span class="rating-box">4.5 ★</span>
+                    </div>
+                    <p class="price">₹25,999</p>
+
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/613SAOPmLeL._AC_UL320_.jpg">
+
+                    <span class="">OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)</span>
+                    <div class="rating">
+                        <span class="rating-box">4.5 ★</span>
+                    </div>
+                    <p class="price">₹25,999</p>
+
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/616wnQmPQ-L._AC_UL320_.jpg" alt="Product Image">
+
+                    <span class="">OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)</span>
+                    <div class="rating">
+                        <span class="rating-box">4.5 ★</span>
+                    </div>
+                    <p class="price">₹18,999</p>
+
+                </div>
+                <div class="product-card">
+                    <img src="https://m.media-amazon.com/images/I/6175SlKKECL._AC_UL320_.jpg">
+                    <span class="">OnePlus Nord CE 3 5G (Aqua Surge, 8GB RAM, 128GB Storage)</span>
+                    <div class="rating">
+                        <span class="rating-box">4.5 ★</span>
+                    </div>
+                    <p class="price">₹27,999</p>
+
+                </div>
+                <!-- Add more cards as needed -->
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Porfolio By Razik Shaikh. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

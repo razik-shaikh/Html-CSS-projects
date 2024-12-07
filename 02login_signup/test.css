@@ -1,0 +1,85 @@
+/* Basic reset for body and container */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Group inputs for layout */
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Input field styles */
+.input {
+    width: 100%;
+    padding: 12px 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Floating label styles */
+.floating-label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+    font-size: 16px;
+    color: #777;
+}
+
+/* When input is focused or has a value, the label floats */
+.input:focus+.floating-label,
+.input:not(:placeholder-shown)+.floating-label {
+    top: -10px;
+    left: 12px;
+    font-size: 12px;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Styling for the input focus */
+.input:focus {
+    border-color: #4CAF50;
+}
+
+/* Button styling */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}

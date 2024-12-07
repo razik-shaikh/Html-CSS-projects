@@ -1,0 +1,190 @@
+.heading {
+    background-image: url('https://images.pexels.com/photos/879143/pexels-photo-879143.jpeg?auto=compress&cs=tinysrgb&w=400');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+    color: white;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    /* padding: 3rem; */
+
+}
+
+.Featured-heading {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: relative;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    font-size: 2rem;
+    /* Adjust heading size if needed */
+    text-align: center;
+    /* Centers the heading */
+    margin-bottom: 1rem;
+}
+
+.Featured-heading::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: rgb(222, 143, 17);
+    margin: 0.5rem auto;
+    /* Centers the line and adds space */
+
+
+}
+
+.head p {
+    text-align: center;
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    color: rgb(110, 108, 106);
+
+}
+
+.contact-cards {
+    display: flex;
+
+    justify-content: center;
+    padding: 2rem;
+    gap: 3rem;
+}
+
+.contact-card-contain {
+    text-align: center;
+    padding: 2rem;
+
+}
+
+.contact-card-contain i {
+    font-size: 2rem;
+    padding-bottom: 1.2rem;
+}
+
+.contact-card-contain h3 {
+    padding-bottom: 0.5rem;
+}
+
+.contact-form {
+    margin-bottom: 2rem;
+}
+
+.form-contact {
+    border-radius: 8px;
+    background: #ffff;
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.3);
+    margin: 0 auto;
+    /* Center the form horizontally */
+    width: 100%;
+    max-width: 800px;
+    padding: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 1.0rem;
+    text-align: center;
+
+
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.4rem;
+    color: #484848;
+    font-weight: 600;
+
+}
+
+.form-group input,
+.form-group textarea,
+.form-contact button {
+    box-sizing: border-box;
+    padding: 0.7rem;
+    width: 700px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 2px solid #dfe2e6;
+
+
+}
+
+.form-contact button {
+    color: rgb(45, 46, 46);
+    background: #dacecfe9;
+    border: none;
+    box-shadow: 0 2px 6px rgb(114, 114, 114);
+}
+
+textarea {
+    resize: none;
+}
+
+button:hover {
+    cursor: pointer;
+
+}
+
+/*map section*/
+.map-container {
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.map-container iframe {
+    margin: 0;
+    width: 100%;
+    height: 450px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        padding-top: 150px;
+    }
+
+    .heading h1 {
+        font-size: 2rem;
+    }
+
+    .Featured-heading {
+        font-size: 1.5rem;
+    }
+
+    /* Grid adjustments for cards */
+    .contact-cards {
+        flex-direction: column;
+    }
+
+    .form-contact {
+        width: 95%;
+        /* Reduce form width further for small devices */
+        padding: 1.5rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 90%;
+        font-size: 0.9rem;
+        /* Slightly smaller font */
+    }
+
+    .form-contact button {
+        width: 90%;
+        font-size: 0.9rem;
+        /* Adjust button size */
+        padding: 0.6rem 1.5rem;
+    }
+
+}

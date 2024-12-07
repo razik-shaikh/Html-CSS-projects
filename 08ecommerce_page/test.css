@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.cart-icon {
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+/* Product Page Layout */
+.product-page {
+    display: grid;
+    grid-template-areas: 
+        "gallery details"
+        "reviews reviews"
+        "related related";
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-gallery {
+    grid-area: gallery;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 400px;
+}
+
+.thumbnail-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail-gallery img {
+    width: 50px;
+    cursor: pointer;
+}
+
+.product-details {
+    grid-area: details;
+}
+
+.price {
+    color: #b12704;
+    font-size: 1.5rem;
+}
+
+.product-reviews {
+    grid-area: reviews;
+}
+
+.review {
+    border-top: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.related-products {
+    grid-area: related;
+    display: flex;
+    gap: 10px;
+}
+
+.related-product {
+    text-align: center;
+}
+
+.related-product img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-page {
+        grid-template-areas: 
+            "gallery"
+            "details"
+            "reviews"
+            "related";
+    }
+}
